@@ -1,33 +1,112 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css?family=Darker+Grotesque:300,400,500,600,700,800,900&display=swap');
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+body{
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 18px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a:hover{
+    text-decoration: none;
 }
-
-.App-link {
-  color: #61dafb;
+.header{
+    padding: 20px 0;
 }
+.logo{
+    font-size: 30px;
+    color: #000000;
+    font-weight: 800;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.mainmenu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.mainmenu ul li{
+    display: inline-block;
+}
+.mainmenu ul li a{
+    display: block;
+    color: #000000;
+    text-transform: uppercase;
+    padding: 13px;
+    position: relative;
+}
+.mainmenu ul li a:hover:after{
+    position: absolute;
+    height: 2px;
+    width: 30px;
+    content: '';
+    background-color: #000000;
+    left: 50%;
+    bottom: 6px;
+    margin-left: -15px;
+
+}
+input[type=text]{
+    padding: 5px 20px;
+    border: 1px solid #ddd;
+}
+input[type=submit]{
+    padding: 6px 25px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+input:focus{
+    outline: none;
+}
+img{
+    max-width: 100%;
+}
+.content-block{
+    padding: 50px 0;
+}
+h2{
+    font-weight: 900;
+}
+.single-photo-item{
+    margin-bottom: 30px;
+}
+.single-photo-item a{
+    color: #333;
+}
+.single-photo-item h5{
+    text-transform: uppercase;
+    margin: 20px 0 0 0;
+}
+.cat-name{
+    opacity: .8;
+    font-size: 90%;
+}
+.footer-menu{
+    margin: 30px 0 100px 0 ;
+}
+.footer-menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.footer-menu li{
+    display: inline-block;
+}
+.footer-menu a{
+    text-transform: uppercase;
+    color: #333333;
+    padding: 15px;
+    display: inline-block;
+}
+.copyright-text{
+    margin-bottom: 30px;
+}
+.photo-wrapper{
+    height: 255px;
+    object-fit: cover;
+}
+.photo-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.top-heading{
+    margin-bottom: 40px;
 }
